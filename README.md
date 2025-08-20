@@ -1,134 +1,46 @@
-# 🚀 3D Data Science Workbench
+# Getting Started with Create React App
 
-Welcome to the 3D Data Science Workbench – your interactive playground for exploring, visualizing, and manipulating datasets in 3D! 🎉
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This app lets you upload CSV files, visualize them in interactive 3D charts, run statistical analyses, and even manipulate data on the fly with live JavaScript coding.
+## Available Scripts
 
-✨ Features
-📊 3D Data Visualization
+In the project directory, you can run:
 
-View your selected numerical feature as interactive 3D bars.
+### `npm start`
 
-Rotate, zoom, and explore your data in real time.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Dynamic coloring and height scaling for easy interpretation.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-📈 Advanced Data Analysis
+### `npm test`
 
-Boxplots: Compare distributions across features.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Correlation Matrix: Discover relationships between variables.
+### `npm run build`
 
-Scatter Plot Matrix: Visualize pairwise relationships.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-PCA Plot: Perform dimensionality reduction and explore patterns.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Distribution Fitting: Analyze and fit distributions to your features.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-💻 Live Coding Environment
+### `npm run eject`
 
-Write JavaScript to manipulate your dataset (modifiedData).
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Use output.push("message") to log messages.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Transform, filter, or create new features – visualization updates instantly.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-🖱️ Interactive Controls
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Resizable left panel (drag or double-click to collapse/expand).
+## Learn More
 
-Feature selectors for visualization and analysis.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Real-time updates as you tweak your data.
-
-🏁 Getting Started
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/3d-data-science-workbench.git
-cd 3d-data-science-workbench
-
-2️⃣ Install Dependencies
-npm install
-
-3️⃣ Run the App
-npm start
-
-
-Then open http://localhost:3000/
- in your browser 🎨
-
-📂 Project Structure
-src/
-├── App.tsx               # Main entry point
-├── Boxplot.tsx           # Boxplot visualization
-├── CorrelationMatrix.tsx # Correlation heatmap
-├── ScatterPlotMatrix.tsx # Pairwise scatter plots
-├── StatsTable.tsx        # Statistical summary
-├── PCAPlot.tsx           # PCA visualization
-├── DistributionFit.tsx   # Distribution analysis
-├── App.css               # Styling
-
-📌 Usage
-
-Upload a CSV File
-
-Click the Upload Data button.
-
-Make sure the first row contains headers.
-
-Choose a Feature to Visualize in 3D
-
-Select a numerical feature from the dropdown.
-
-Spin and explore the 3D bars.
-
-Explore Analysis
-
-Select multiple features for advanced analysis.
-
-View correlations, PCA, scatter plots, and more.
-
-Start Coding!
-
-Write JavaScript in the coding environment.
-
-Example:
-
-modifiedData.forEach(row => {
-  row.DoubleValue = parseFloat(row.SomeFeature) * 2;
-});
-output.push("Created a new feature: DoubleValue!");
-
-
-Run your code and see the visualization update instantly.
-
-🛠️ Built With
-
-React + TypeScript – Frontend framework
-
-Three.js – 3D visualizations
-
-Chart.js & Custom SVGs – Charts & plots
-
-PapaParse – CSV parsing
-
-🎯 Who Is This For?
-
-Students learning about data visualization
-
-Data enthusiasts who want to explore datasets quickly
-
-Researchers testing hypotheses
-
-Anyone who thinks 3D data looks cool 😎
-
-🐛 Troubleshooting
-
-Refresh the page if something breaks.
-
-Make sure your CSV has headers.
-
-Use numerical columns for visualization.
-
-📜 License
-
-MIT License © 2025
+To learn React, check out the [React documentation](https://reactjs.org/).

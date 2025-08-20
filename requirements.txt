@@ -1,0 +1,14 @@
+# Create requirements.txt
+@'
+fastapi==0.103.1
+uvicorn==0.23.2
+python-multipart
+torch==2.0.1+cu118
+torchvision==0.15.2+cu118
+--index-url https://download.pytorch.org/whl/cu118
+git+https://github.com/NVlabs/magic3d.git
+python-dotenv
+'@ | Out-File -FilePath requirements.txt -Encoding utf8
+
+# Now install dependencies
+pip install -r requirements.txt

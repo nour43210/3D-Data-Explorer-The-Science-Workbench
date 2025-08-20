@@ -1,0 +1,139 @@
+# 1. Navigate to your project folder
+cd N:\newwwww
+
+# 2. Activate virtual environment
+uvicorn api:app --reload
+
+# 3. Install requirements (if not done)
+pip install -r requirements.txt
+
+# 4. Run the FastAPI server
+uvicorn api:app --reload
+
+
+
+
+#backend prob 
+
+Correct Way to Run FastAPI Backend
+First navigate to your backend folder:
+
+cd N:\newwwww\backend
+Activate virtual environment:
+
+
+.\.venv\Scripts\activate
+Run FastAPI properly:
+
+
+uvicorn api:app --reload
+
+
+
+
+
+
+# 1. Navigate to frontend
+cd N:\newwwww\frontend
+
+# 2. Install dependencies (first time only)
+npm install
+
+# 3. Run the React app
+npm start
+
+https://chat.deepseek.com/a/chat/s/c324ec9d-0f87-41a8-8836-b657d17d516d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Compiled with problems:
+×
+ERROR in src/App.tsx:11:10
+TS2339: Property 'primitive' does not exist on type 'JSX.IntrinsicElements'.
+     9 |   // @ts-ignore - useGLTF typing workaround
+    10 |   const { scene } = useGLTF(url);
+  > 11 |   return <primitive object={scene} scale={0.5} />;
+       |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    12 | }
+    13 |
+    14 | function App() {
+ERROR in src/App.tsx:85:11
+TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+    83 |           camera={{ position: [0, 0, 5], fov: 50 }}
+    84 |         >
+  > 85 |           <ambientLight intensity={0.5} />
+       |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    86 |           <spotLight 
+    87 |             position={[10, 10, 10]} 
+    88 |             angle={0.15} 
+ERROR in src/App.tsx:86:11
+TS2339: Property 'spotLight' does not exist on type 'JSX.IntrinsicElements'.
+    84 |         >
+    85 |           <ambientLight intensity={0.5} />
+  > 86 |           <spotLight 
+       |           ^^^^^^^^^^^
+  > 87 |             position={[10, 10, 10]} 
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 88 |             angle={0.15} 
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 89 |             penumbra={1} 
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 90 |             intensity={1} 
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 91 |             castShadow
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 92 |           />
+       | ^^^^^^^^^^^^^
+    93 |           <Suspense fallback={null}>
+    94 |             {modelUrl ? (
+    95 |               <Model url={modelUrl} />
+ERROR in src/App.tsx:97:15
+TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+     95 |               <Model url={modelUrl} />
+     96 |             ) : (
+  >  97 |               <mesh rotation={[0.5, 0.5, 0]}>
+        |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     98 |                 <boxGeometry args={[1, 1, 1]} />
+     99 |                 <meshStandardMaterial color="orange" />
+    100 |               </mesh>
+ERROR in src/App.tsx:98:17
+TS2339: Property 'boxGeometry' does not exist on type 'JSX.IntrinsicElements'.
+     96 |             ) : (
+     97 |               <mesh rotation={[0.5, 0.5, 0]}>
+  >  98 |                 <boxGeometry args={[1, 1, 1]} />
+        |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     99 |                 <meshStandardMaterial color="orange" />
+    100 |               </mesh>
+    101 |             )}
+ERROR in src/App.tsx:99:17
+TS2339: Property 'meshStandardMaterial' does not exist on type 'JSX.IntrinsicElements'.
+     97 |               <mesh rotation={[0.5, 0.5, 0]}>
+     98 |                 <boxGeometry args={[1, 1, 1]} />
+  >  99 |                 <meshStandardMaterial color="orange" />
+        |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    100 |               </mesh>
+    101 |             )}
+    102 |           </Suspense>
+ERROR in src/App.tsx:100:15
+TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+     98 |                 <boxGeometry args={[1, 1, 1]} />
+     99 |                 <meshStandardMaterial color="orange" />
+  > 100 |               </mesh>
+        |               ^^^^^^^
+    101 |             )}
+    102 |           </Suspense>
+    103 |           <OrbitControls 
